@@ -10,7 +10,6 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
 class FetchingFragment : Fragment() {
-
     private lateinit var viewModel: FetchingViewModel
     private lateinit var recyclerView: RecyclerView
     private lateinit var adapter: RideAdapter
@@ -18,7 +17,6 @@ class FetchingFragment : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
         return inflater.inflate(R.layout.fragment_fetching, container, false)
     }
-
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         viewModel = ViewModelProvider(this)[FetchingViewModel::class.java]
