@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
     app:startDestination="@id/mainFragment">
-
     <fragment
         android:id="@+id/mainFragment"
         android:name="com.example.kotlin.MainFragment"
@@ -17,9 +16,6 @@
             android:id="@+id/action_mainFragment_to_insertionFragment"
             app:destination="@id/insertionFragment" />
     </fragment>
-
-
-
     <fragment
         android:id="@+id/insertionFragment"
         android:name="com.example.kotlin.InsertionFragment"
