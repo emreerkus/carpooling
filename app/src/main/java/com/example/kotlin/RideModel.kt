@@ -1,5 +1,4 @@
 package com.example.kotlin
-
 data class RideModel(
     var empId: String? = null,
     var empName: String? = null,
