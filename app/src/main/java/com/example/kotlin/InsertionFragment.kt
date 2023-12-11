@@ -11,10 +11,7 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.findNavController
 
-
 class InsertionFragment : Fragment() {
-
-    // Information data to be filled
     private lateinit var viewModel: InsertionViewModel
     private lateinit var etName: EditText
     private lateinit var etSource: EditText
@@ -29,7 +26,6 @@ class InsertionFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
         return inflater.inflate(R.layout.fragment_insertion, container, false)
     }
-
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         viewModel = ViewModelProvider(this)[InsertionViewModel::class.java]
