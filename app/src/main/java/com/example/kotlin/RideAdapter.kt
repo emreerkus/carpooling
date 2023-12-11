@@ -20,10 +20,8 @@ class RideAdapter(private var rideList: List<RideModel>) : RecyclerView.Adapter<
 
     override fun onBindViewHolder(holder: RideViewHolder, position: Int) {
         val ride = rideList[position]
-        // holder.textViewName.text = ride.empName // Bind data to your views
         holder.tvSource.text = ride.empSource // Assuming empSource is the source field in RideModel
-        holder.tvDestination.text = ride.empDestination // Assuming empDestination is the destination field in RideModel
-        // Bind other data
+        holder.tvDestination.text = ride.empDestination // Assuming empDestination is the destination field in RideModel        
     }
 
     override fun getItemCount(): Int = rideList.size
