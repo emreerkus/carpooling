@@ -11,11 +11,9 @@ import com.google.firebase.ktx.Firebase
 class FetchingViewModel : ViewModel() {
     private val _rideData = MutableLiveData<List<RideModel>>()
     val rideData: LiveData<List<RideModel>> = _rideData
-
     init {
         fetchData()
     }
-
     private fun fetchData() {
         val database: DatabaseReference = Firebase.database.reference
 
