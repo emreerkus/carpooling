@@ -11,13 +11,11 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.google.android.material.navigation.NavigationView
 
-
 class MainActivity : AppCompatActivity() {
 
     private val drawerLayout: DrawerLayout by lazy{
         findViewById(R.id.drawerLayout)
     }
-
     private val navController by lazy {
         val navHostFragment =  supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as NavHostFragment
         navHostFragment.findNavController()
