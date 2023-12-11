@@ -6,7 +6,6 @@ import com.example.kotlin.RideModel
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 
-
 class InsertionViewModel : ViewModel() {
 
     private var database: FirebaseDatabase = FirebaseDatabase.getInstance()
