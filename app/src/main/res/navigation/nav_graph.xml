@@ -16,6 +16,10 @@
             android:id="@+id/action_mainFragment_to_insertionFragment"
             app:destination="@id/insertionFragment" />
     </fragment>
+<<<<<<< HEAD
+=======
+
+>>>>>>> aecd82b (ride detail correction)
     <fragment
         android:id="@+id/insertionFragment"
         android:name="com.example.kotlin.InsertionFragment"

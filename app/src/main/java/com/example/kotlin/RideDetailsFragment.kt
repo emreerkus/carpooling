@@ -1,6 +1,7 @@
 package com.example.kotlin
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -53,5 +54,6 @@ class RideDetailsFragment : Fragment() {
         tvContact?.text = arguments?.getString("contact")
         tvDate?.text = arguments?.getString("date")
         tvTime?.text = arguments?.getString("time")
+        Log.d("ARGS", arguments.toString())
     }
 }
